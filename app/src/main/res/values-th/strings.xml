@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exit_label">ออก</string>
+    <string name="find_label">คำนวณเกรด</string>
+    <string name="name_label">ชื่อ</string>
+    <string name="score_label">คะแนน</string>
+    <string name="nameapp_label">คุณได้เกรดอะไร</string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.whatsyourgrade.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/classroom"
+    android:padding="16dp"
+    >
+
+
+    <TextView
+        android:id="@+id/What"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="What’s Your Grade"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        tools:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Enter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/What"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Enter your name and score"
+        android:textColor="@android:color/background_dark"
+        android:background="@android:color/white"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Enter"
+        android:paddingLeft="10dp"
+        android:background="@android:color/white"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/Name_Text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Name"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Name_Text"
+        android:paddingLeft="10dp"
+        android:background="@android:color/white"
+        android:text="Score" />
+
+    <EditText
+        android:id="@+id/Score_Text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Score"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+         />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    >
+
+    <Button
+        android:id="@+id/Find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.75"
+        android:text="Find grade" />
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:text="Exit" />
+
+    </LinearLayout>
+</RelativeLayout>
